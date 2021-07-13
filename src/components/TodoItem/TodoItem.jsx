@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./TodoItem.module.scss";
-import { useParams } from "react-router-dom";
+import { FaTrashAlt } from "react-icons/fa";
 
 const TodoItem = () => {
   const [todoItems, setTodoItems] = useState([]);
@@ -35,13 +35,13 @@ const TodoItem = () => {
           <li className={styles.li}>{todoItem.task}</li>
 
           <button
+            className={styles.delete}
             onClick={() => {
               handleDelete(todoItem.id);
               deleteTodoFromDatabase(todoItem.id);
             }}
-            className={styles.delete}
           >
-            Delete
+            <FaTrashAlt />
           </button>
         </div>
       ))}
