@@ -1,13 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
-import NavBar from "./components/NavBar/NavBar";
-import List from "./components/List/List";
+
+import TodoItem from "./components/TodoItem/TodoItem";
+import TodoAdd from "./components/TodoAdd/TodoAdd";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <List />
+      <TodoAdd />
+      <TodoItem />
     </div>
   );
 }

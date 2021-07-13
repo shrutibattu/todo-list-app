@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  margin-top: 50px;
+  background-color: #1a193f;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.id {
+  margin: 0;
+  border: solid;
+  border-radius: 0;
+  width: 20%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+.task {
+  margin: 0;
+  border: solid;
+  border-radius: 0;
+  width: 60%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+.addBtn {
+  padding: 10px;
+  width: 20%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}

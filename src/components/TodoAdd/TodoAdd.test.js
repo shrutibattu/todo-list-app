@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import List from "./List";
+import TodoAdd from "./TodoAdd";
 
-describe("List tests", () => {
+describe("TodoAdd tests", () => {
   it("should render", () => {
-    expect(render(<List />)).toBeTruthy();
+    expect(render(<TodoAdd />)).toBeTruthy();
   });
 });
